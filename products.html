@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QA Test Site - Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Products</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Our Products</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="images/product1.svg" alt="Product 1" />
+        <h4>Product 1</h4>
+        <p>Working product image.</p>
+      </article>
+
+      <article class="card">
+        <img src="images/missing.jpg" alt="Missing product" />
+        <h4>Product 2 (broken image)</h4>
+        <p>This card references a missing image to test image 404 detection.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 QA Test Site</p>
+    </div>
+  </footer>
+</body>
+</html>

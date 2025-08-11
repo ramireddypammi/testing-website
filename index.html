@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QA Test Site - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>QA Testing Website</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="broken-page.html">Broken Page</a> <!-- intentional broken link -->
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Quick checks you can run</h2>
+      <ul>
+        <li>Open both QA & PROD builds and compare pages</li>
+        <li>Check missing images and broken links</li>
+        <li>Test API responses and rendering</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Images (one intentionally missing)</h3>
+      <img src="images/product1.svg" alt="Product 1" class="thumb" />
+      <img src="images/missing.jpg" alt="Missing product (should be broken)" class="thumb" />
+    </section>
+
+    <section>
+      <h3>Sample API fetch (uses jsonplaceholder)</h3>
+      <div id="api-result">Loading API data...</div>
+      <button id="reload">Reload</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 QA Test Site</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
